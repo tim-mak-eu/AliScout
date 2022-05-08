@@ -1,0 +1,10 @@
+{
+   "appDesc": {
+      "description": "App description.",
+      "message": "Vind het Amazon product op AliExpress"
+   },
+   "appName": {
+      "description": "App name.",
+      "message": "AliScout"
+   }
+}

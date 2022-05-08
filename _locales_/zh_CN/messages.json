@@ -1,0 +1,10 @@
+{
+   "appDesc": {
+      "description": "App description.",
+      "message": "在速卖通上查找亚马逊产品"
+   },
+   "appName": {
+      "description": "App name.",
+      "message": "AliScout"
+   }
+}

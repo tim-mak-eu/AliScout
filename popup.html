@@ -1,0 +1,147 @@
+<html>
+<header>
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">   
+<style type="text/css" >
+body {
+  min-width: 490px;
+  min-height: 600px;
+  margin: 0px;
+  padding-top: 0px;
+  background-color: #efefef;
+}
+header{
+  position: sticky;
+  top: 0;
+  padding: 2px;
+  background-color: white;
+  z-index: 1;
+}
+p{
+  margin-top: 0px;
+  padding-top: 0px;
+}
+th, td, p, input {
+            font:14px Verdana;
+}
+table, th, td
+{
+    border: solid 0px #DDD;
+    border-collapse: collapse;
+    padding: 2px 3px;
+    text-align: center;
+}
+th {
+    font-weight:bold;
+}
+.card {
+    width: 150px;
+    margin: 2px;
+    padding: 4px;
+    background-color: white;
+    overflow: auto;
+    border-radius: 1em;
+    box-shadow: 4px 4px 8px 0px #9e9e9e;
+}
+.card:hover{
+  transform: scale(1.05);
+  transition: transform 0.5s;
+  z-index: -1;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.title {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: small;
+}
+.price {
+    font-weight: 700;
+    float: left;
+}
+.rating {
+    display:inline;
+    float: left;
+    clear: left;
+    font-size: small;
+    color: gray;
+}
+.orders {
+    display:inline;
+    float: right;
+    font-size: small;
+    color: gray;
+}
+.spinner {
+  margin: 100px auto;
+  width: 50px;
+  height: 40px;
+  text-align: center;
+  font-size: 10px;
+}
+
+.spinner > div {
+  background-color: #F18C6A;
+  height: 100%;
+  width: 6px;
+  display: inline-block;
+  
+  -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+  animation: sk-stretchdelay 1.2s infinite ease-in-out;
+}
+
+.spinner .rect2 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+
+.spinner .rect3 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+.spinner .rect4 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+
+.spinner .rect5 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+
+@-webkit-keyframes sk-stretchdelay {
+  0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
+  20% { -webkit-transform: scaleY(1.0) }
+}
+
+@keyframes sk-stretchdelay {
+  0%, 40%, 100% { 
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  }  20% { 
+    transform: scaleY(1.0);
+    -webkit-transform: scaleY(1.0);
+  }
+}
+</style>
+<img height="50px" src="images/logo.png"></img>
+<a style="float: right; vertical-align: middle;" href="https://www.buymeacoffee.com/aliscout" target="_blank"><img src="images/bmc.png" alt="Buy Me A Coffee" height="50px"></a>
+
+</header>
+  <body>
+      <div id="showData" class="spinner">
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+        <div class="rect4"></div>
+        <div class="rect5"></div>
+      </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
